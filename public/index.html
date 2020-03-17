@@ -8,59 +8,64 @@
     <link rel="stylesheet" href="/screen.css" />
   </head>
   <body>
-    <script src="/main.js" charset="utf-8"></script>
-    <h1>My Score Board</h1>
+    <h1>Street Hoop Finals</h1>
+    <button class="reset">Reset</button>
+    <button class="round-button">Next Quarter</button>
+    <p class="winner"></p>
+    <section class="team one">
+      <section>
+        <h2 class="quarter">Quarter</h2>
+        <div class="round-box">
+          <p class="round-count">1</p>
+        </div>
+      </section>
     <section class="teams">
       <section class="team one">
         <section>
-          <h2 class="team-1-name"></h2>
-          <p class="team-1-score">
-            <script>
-              t1Score
-            </script>
-          </p>
+          <h2 class="team-1-name">Home</h2>
+          <div class="score-box">
+            <p class="team-1-score">0</p>
+          </div>
         </section>
-        <section>
+        <div class="edit-container">
           <section>
-            update team 1 name
-            <input type="text" class="team-1-input" />
-            <button class="update-team-1-name">Update</button>
+            <section>
+              update team 1 name
+              <input type="text" class="team-1-input" />
+              <button class="update-team-1-name">Update</button>
+            </section>
+            <section>
+              update team 1 score
+              <button class="team-1-add-1-button">add 1</button>
+              <button class="team-1-subtract-1-button">subtract 1</button>
+            </section>
           </section>
-          <section>
-            update team 1 score
-            <button class="team-1-add-1-button">add 1</button>
-            <button class="team-1-subtract-1-button">subtract 1</button>
-          </section>
-        </section>
+        </div>
       </section>
       <section class="team two">
         <section>
-          <h2 class="team-2-name">
-            <script>
-              var t2Name
-            </script>
-          </h2>
-          <p class="team-2-score">
-            <script>
-              t2Score
-            </script>
-          </p>
+          <h2 class="team-2-name">Away</h2>
+          <div class="score-box">
+            <p class="team-2-score">0</p>
+          </div>
         </section>
-
-        <section>
+        <div class="edit-container">
           <section>
-            update team 2 name
-            <input type="text" class="team-2-input" />
-            <button class="update-team-2-name">Update</button>
+            <section>
+              update team 2 name
+              <input type="text" class="team-2-input" />
+              <button class="update-team-2-name">Update</button>
+            </section>
+            <section>
+              update team 2 score
+              <button class="team-2-add-1-button">add 1</button>
+              <button class="team-2-subtract-1-button">subtract 1</button>
+            </section>
           </section>
-          <section>
-            update team 2 score
-            <button class="team-2-add-1-button">add 1</button>
-            <button class="team-2-subtract-1-button">subtract 1</button>
-          </section>
-        </section>
+        </div>
       </section>
     </section>
-  </script>
+
+    <script src="/main.js" charset="utf-8"></script>
   </body>
 </html>
